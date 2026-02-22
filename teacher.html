@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Section — BioWaleSir</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .tab-content-area { padding: 40px; max-width: 1100px; margin: 0 auto; }
+    .tab-content-area h2 { font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 8px; }
+    .tab-content-area p { color: var(--text-light); font-size: 14px; margin-bottom: 28px; }
+    .teacher-intro {
+      background: var(--green-800);
+      color: #fff;
+      padding: 8px 40px;
+      font-size: 13px;
+      opacity: 0.85;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+<div id="nav-container"></div>
+
+<div class="class-hero page-offset" style="background: linear-gradient(135deg, #1a0a2e, #2d1b69);" data-class-bg="T">
+  <div class="class-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> › Teacher Section</div>
+    <h1>👩‍🏫 Teacher Section</h1>
+    <p>Exclusive tools and resources for biology educators — lesson plans, PPTs, teaching aids and more.</p>
+  </div>
+</div>
+
+<div class="teacher-intro">🔐 Resources in this section are designed for educators — feel free to use, adapt, and share with your students.</div>
+
+<div class="subtabs-bar">
+  <div class="subtabs-inner">
+    <button class="subtab active" data-panel="t-plans">📓 Lesson Plans</button>
+    <button class="subtab" data-panel="t-ppt">🖥️ Chapter PPTs</button>
+    <button class="subtab" data-panel="t-aids">🎨 Teaching Aids</button>
+    <button class="subtab" data-panel="t-rubrics">📋 Assessment Rubrics</button>
+    <button class="subtab" data-panel="t-activity">🧪 Class Activities</button>
+  </div>
+</div>
+
+<!-- LESSON PLANS -->
+<div id="t-plans" class="content-panel active">
+  <div class="tab-content-area">
+    <h2>📓 Lesson Plans</h2>
+    <p>Detailed chapter-wise lesson plans aligned with NCERT and CBSE curriculum. Each plan includes learning objectives, teaching strategies, and assessment ideas.</p>
+    <div class="resource-grid">
+      <div class="resource-card" style="border-left:4px solid #8e44ad;" onclick="openResource('#','Lesson Plan Ch1')">
+        <div class="resource-icon" style="background:#f5e8fd;">📓</div>
+        <div class="resource-info">
+          <div class="resource-name">Class 11 — Ch 1: The Living World</div>
+          <div class="resource-desc">3-day lesson plan • Objectives • Activities</div>
+        </div>
+        <span class="resource-tag" style="background:#f5e8fd;color:#8e44ad;">PDF</span>
+      </div>
+      <div class="resource-card" style="border-left:4px solid #8e44ad;" onclick="openResource('#','Lesson Plan Ch10')">
+        <div class="resource-icon" style="background:#f5e8fd;">📓</div>
+        <div class="resource-info">
+          <div class="resource-name">Class 11 — Ch 10: Cell Division</div>
+          <div class="resource-desc">4-day lesson plan • Lab integration</div>
+        </div>
+        <span class="resource-tag" style="background:#f5e8fd;color:#8e44ad;">PDF</span>
+      </div>
+      <div class="resource-card" style="border-left:4px solid #8e44ad;" onclick="openResource('#','Lesson Plan Ch12-5')">
+        <div class="resource-icon" style="background:#f5e8fd;">📓</div>
+        <div class="resource-info">
+          <div class="resource-name">Class 12 — Ch 5: Inheritance & Variation</div>
+          <div class="resource-desc">5-day lesson plan • Punnett squares</div>
+        </div>
+        <span class="resource-tag" style="background:#f5e8fd;color:#8e44ad;">PDF</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PPT PANEL -->
+<div id="t-ppt" class="content-panel">
+  <div class="tab-content-area">
+    <h2>🖥️ Chapter PPTs</h2>
+    <p>Ready-to-use classroom presentation slides for every chapter. Editable PPTX format with diagrams and key points built in.</p>
+    <div class="resource-grid">
+      <div class="resource-card" style="border-left:4px solid #e67e22;" onclick="openResource('#','PPT Ch1')">
+        <div class="resource-icon" style="background:#fdf0e8;">🖥️</div>
+        <div class="resource-info">
+          <div class="resource-name">Class 11 — Ch 1: The Living World</div>
+          <div class="resource-desc">28 slides • Editable PPTX</div>
+        </div>
+        <span class="resource-tag" style="background:#fdf0e8;color:#e67e22;">PPTX</span>
+      </div>
+      <div class="resource-card" style="border-left:4px solid #e67e22;" onclick="openResource('#','PPT Ch8')">
+        <div class="resource-icon" style="background:#fdf0e8;">🖥️</div>
+        <div class="resource-info">
+          <div class="resource-name">Class 11 — Ch 8: Cell The Unit of Life</div>
+          <div class="resource-desc">35 slides • With animations</div>
+        </div>
+        <span class="resource-tag" style="background:#fdf0e8;color:#e67e22;">PPTX</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TEACHING AIDS -->
+<div id="t-aids" class="content-panel">
+  <div class="tab-content-area">
+    <h2>🎨 Teaching Aids & Activities</h2>
+    <p>Creative classroom activity ideas, models, and teaching tools to make biology lessons engaging and memorable.</p>
+    <div class="resource-grid">
+      <div class="resource-card" style="border-left:4px solid #27ae60;" onclick="openResource('#','Aid 1')">
+        <div class="resource-icon" style="background:#e8fdf0;">🎨</div>
+        <div class="resource-info">
+          <div class="resource-name">Cell Model Activity — Class 9/11</div>
+          <div class="resource-desc">DIY cell model using household materials</div>
+        </div>
+        <span class="resource-tag" style="background:#e8fdf0;color:#27ae60;">Guide</span>
+      </div>
+      <div class="resource-card" style="border-left:4px solid #27ae60;" onclick="openResource('#','Aid 2')">
+        <div class="resource-icon" style="background:#e8fdf0;">🎨</div>
+        <div class="resource-info">
+          <div class="resource-name">Meiosis Role-Play Activity</div>
+          <div class="resource-desc">Students act out meiosis stages in class</div>
+        </div>
+        <span class="resource-tag" style="background:#e8fdf0;color:#27ae60;">Guide</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RUBRICS -->
+<div id="t-rubrics" class="content-panel">
+  <div class="tab-content-area">
+    <h2>📋 Assessment Rubrics</h2>
+    <p>Marking schemes and evaluation criteria aligned with CBSE board standards. Coming soon.</p>
+  </div>
+</div>
+
+<!-- ACTIVITIES -->
+<div id="t-activity" class="content-panel">
+  <div class="tab-content-area">
+    <h2>🧪 Class Activities</h2>
+    <p>Ready-to-run biology activities for the classroom. Coming soon.</p>
+  </div>
+</div>
+
+<div id="footer-container"></div>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
