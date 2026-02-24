@@ -4,9 +4,8 @@
 const NAV_HTML = `
 <nav class="navbar">
   <a href="index.html" class="nav-logo">
-    <span class="leaf">🌿</span>
-    BioWaleSir
-  </a>
+  <img src="logo.png" alt="BioWaleSir" style="height:36px;width:auto;">
+</a>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Home</a></li>
     <li class="nav-class"><a href="class9.html">Class 9</a></li>
@@ -46,7 +45,7 @@ const FOOTER_HTML = `
 <footer class="footer">
   <div class="footer-grid">
     <div class="footer-brand">
-      <div class="logo">🌿 BioWaleSir</span></div>
+      <div class="logo"><img src="logo.png" alt="BioWaleSir" style="height:30px;width:auto;filter:brightness(0) invert(1);"></div>
       <p>One Stop Solution for Biology — NCERT based content for Class 9–12 students and teachers across India.</p>
     </div>
     <div class="footer-col">
