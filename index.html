@@ -214,30 +214,41 @@
         <div class="contact-item"><span>📱</span><a href="https://wa.me/919936894399" target="_blank" style="color:inherit;text-decoration:none;">Chat on WhatsApp →</a></div>
         <div class="contact-item"><span>📍</span><span>India — Serving students nationwide</span></div>
       </div>
-      <form class="contact-form" onsubmit="handleContact(event)">
-        <div class="form-group">
-          <label>Your Name</label>
-          <input type="text" placeholder="Enter your name" required>
-        </div>
-        <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" placeholder="your@email.com" required>
-        </div>
-        <div class="form-group">
-          <label>I am a</label>
-          <select>
-            <option>Student</option>
-            <option>Teacher</option>
-            <option>Parent</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Message</label>
-          <textarea placeholder="Your message or resource request..." required></textarea>
-        </div>
-        <button type="submit" class="btn-submit">Send Message →</button>
-      </form>
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <!-- ✏️ Paste your Web3Forms key here -->
+  <input type="hidden" name="access_key" value="85ac9494-4b81-46e1-9b9d-6d1a1f1943a1">
+  <input type="hidden" name="subject" value="New Message — BioWaleSir Contact Form">
+  <input type="hidden" name="redirect" value="https://edubiowalesir.github.io/biowalesir/index.html#contact">
+  <input type="checkbox" name="botcheck" style="display:none;">
+
+  <div class="form-group">
+    <label>Your Name</label>
+    <input type="text" name="name" placeholder="Enter your name" required>
+  </div>
+
+  <div class="form-group">
+    <label>Email Address</label>
+    <input type="email" name="email" placeholder="your@email.com" required>
+  </div>
+
+  <div class="form-group">
+    <label>I am a</label>
+    <select name="role">
+      <option>Student</option>
+      <option>Teacher</option>
+      <option>Parent</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>Message</label>
+    <textarea name="message" placeholder="Your message or resource request..." required></textarea>
+  </div>
+
+  <button type="submit" class="btn-submit">Send Message →</button>
+
+</form>
     </div>
   </div>
 </section>
