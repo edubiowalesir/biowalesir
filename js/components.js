@@ -19,6 +19,7 @@ const NAV_HTML = `
         <a href="teacher.html">👩‍🏫 Teacher Section</a>
         <a href="index.html#about">ℹ️ About Us</a>
         <a href="index.html#contact">📬 Contact</a>
+        <a href="index.html#donate">💛 Donate</a>
       </div>
     </li>
   </ul>
@@ -37,6 +38,7 @@ const NAV_HTML = `
   <a href="teacher.html">👩‍🏫 Teacher Section</a>
   <a href="index.html#about">ℹ️ About Us</a>
   <a href="index.html#contact">📬 Contact</a>
+  <a href="index.html#donate">💛 Donate</a>
 </div>
 `;
 
