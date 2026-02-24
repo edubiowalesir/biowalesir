@@ -241,7 +241,80 @@
     </div>
   </div>
 </section>
+<!-- DONATE SECTION -->
+<section class="section" id="donate">
+  <div style="max-width:900px;margin:0 auto;text-align:center;">
 
+    <div class="section-label">Support BioWaleSir</div>
+    <h2 class="section-title">Help Us Stay Free 🌿</h2>
+    <p style="color:var(--text-light);font-size:15px;max-width:580px;margin:0 auto 40px;">
+      BioWaleSir is completely <strong>ad-free</strong> — no distractions, no embarrassing ads for students or teachers. We rely entirely on the support of our community to keep creating quality biology content.
+    </p>
+
+    <div style="display:flex;gap:32px;justify-content:center;align-items:flex-start;flex-wrap:wrap;">
+
+      <!-- QR CODE BOX -->
+      <div style="background:#fff;border-radius:20px;padding:28px;box-shadow:0 4px 24px rgba(0,0,0,0.08);min-width:220px;">
+        <p style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--green-500);font-weight:700;margin-bottom:16px;">Scan to Pay</p>
+
+        <!-- ✏️ Replace this img src with your actual QR code image link from Google Drive -->
+        <!-- To get image link: Upload QR to Drive → Share → Copy link → 
+             Change: drive.google.com/file/d/FILE_ID/view 
+             To:     drive.google.com/uc?export=view&id=FILE_ID -->
+        <img src="https://drive.google.com/uc?export=view&id=1TNIEq5iSvOP6Gl64GlckRhyKnRhwVYXR"
+     alt="UPI QR Code"
+     style="width:180px;height:180px;border-radius:12px;object-fit:contain;border:2px solid var(--cream-dark);">
+        <p style="font-size:12px;color:var(--text-light);margin-top:12px;">Scan with any UPI app</p>
+      </div>
+
+      <!-- UPI ID BOX -->
+      <div style="background:#fff;border-radius:20px;padding:28px;box-shadow:0 4px 24px rgba(0,0,0,0.08);min-width:260px;text-align:left;">
+
+        <p style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--green-500);font-weight:700;margin-bottom:20px;">Pay via UPI ID</p>
+
+        <!-- UPI ID display box -->
+        <div style="background:var(--cream);border:1.5px dashed var(--green-300);border-radius:10px;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px;">
+          <!-- ✏️ Replace with your actual UPI ID -->
+          <span id="upiId" style="font-size:15px;font-weight:700;color:var(--green-700);letter-spacing:0.5px;">9936894399@upi</span>
+          <button onclick="copyUPI()" style="background:var(--green-700);color:#fff;border:none;padding:6px 14px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;">Copy</button>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:24px;">
+          <div style="display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--text-mid);">📱 <span>Google Pay, PhonePe, Paytm</span></div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--text-mid);">🏦 <span>All UPI apps supported</span></div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--text-mid);">🔒 <span>100% safe & secure</span></div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--text-mid);">🌿 <span>Keeps content ad-free</span></div>
+        </div>
+
+        <a href="#donate" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;">
+          💛 Donate Any Amount
+        </a>
+
+      </div>
+    </div>
+
+    <p style="margin-top:32px;font-size:13px;color:var(--text-light);">
+      Even ₹10 helps! Every contribution directly supports free biology education. 🙏
+    </p>
+
+  </div>
+</section>
+
+<!-- Copy UPI script -->
+<script>
+function copyUPI() {
+  const upi = document.getElementById('upiId').textContent;
+  navigator.clipboard.writeText(upi).then(() => {
+    const btn = event.target;
+    btn.textContent = 'Copied!';
+    btn.style.background = '#27ae60';
+    setTimeout(() => {
+      btn.textContent = 'Copy';
+      btn.style.background = '';
+    }, 2000);
+  });
+}
+</script>
 <!-- FOOTER -->
 <div id="footer-container"></div>
 
