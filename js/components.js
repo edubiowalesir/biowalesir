@@ -8,19 +8,19 @@ const NAV_HTML = `
   BioWaleSir
 </a>
   <ul class="nav-links" id="navLinks">
-    <li><a href="index.html">Home</a></li>
-    <li class="nav-class"><a href="class9.html">Class 9</a></li>
-    <li class="nav-class"><a href="class10.html">Class 10</a></li>
-    <li class="nav-class"><a href="class11.html">Class 11</a></li>
-    <li class="nav-class"><a href="class12.html">Class 12</a></li>
+    <li><a href="/biowalesir/index.html">Home</a></li>
+<li class="nav-class"><a href="/biowalesir/class9.html">Class 9</a></li>
+<li class="nav-class"><a href="/biowalesir/class10.html">Class 10</a></li>
+<li class="nav-class"><a href="/biowalesir/class11.html">Class 11</a></li>
+<li class="nav-class"><a href="/biowalesir/class12.html">Class 12</a></li>
     <li class="nav-more">
       <button class="nav-more-btn">More</button>
       <div class="nav-dropdown">
-        <a href="teacher.html">👩‍🏫 Teacher Section</a>
-        <a href="index.html#about">ℹ️ About Us</a>
-        <a href="index.html#contact">📬 Contact</a>
-        <a href="index.html#donate">💛 Donate</a>
-      </div>
+       <a href="/biowalesir/teacher.html">👩‍🏫 Teacher Section</a>
+<a href="/biowalesir/index.html#about">ℹ️ About Us</a>
+<a href="/biowalesir/index.html#contact">📬 Contact</a>
+<a href="/biowalesir/index.html#donate">💛 Donate</a>      
+</div>
     </li>
   </ul>
   <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -28,17 +28,17 @@ const NAV_HTML = `
   </button>
 </nav>
 <div class="mobile-nav" id="mobileNav">
-  <a href="index.html">🏠 Home</a>
+ <a href="/biowalesir/index.html">🏠 Home</a>
   <div class="mobile-divider"></div>
-  <a href="class9.html">📗 Class 9</a>
-  <a href="class10.html">📘 Class 10</a>
-  <a href="class11.html">📙 Class 11</a>
-  <a href="class12.html">📕 Class 12</a>
+  <a href="/biowalesir/class9.html">📗 Class 9</a>
+<a href="/biowalesir/class10.html">📘 Class 10</a>
+<a href="/biowalesir/class11.html">📙 Class 11</a>
+<a href="/biowalesir/class12.html">📕 Class 12</a>
   <div class="mobile-divider"></div>
-  <a href="teacher.html">👩‍🏫 Teacher Section</a>
-  <a href="index.html#about">ℹ️ About Us</a>
-  <a href="index.html#contact">📬 Contact</a>
-  <a href="index.html#donate">💛 Donate</a>
+  <a href="/biowalesir/teacher.html">👩‍🏫 Teacher Section</a>
+<a href="/biowalesir/index.html#about">ℹ️ About Us</a>
+<a href="/biowalesir/index.html#contact">📬 Contact</a>
+<a href="/biowalesir/index.html#donate">💛 Donate</a>
 </div>
 `;
 
@@ -52,10 +52,10 @@ const FOOTER_HTML = `
     <div class="footer-col">
       <h4>Classes</h4>
       <ul>
-        <li><a href="class9.html">Class 9 Biology</a></li>
-        <li><a href="class10.html">Class 10 Biology</a></li>
-        <li><a href="class11.html">Class 11 Biology</a></li>
-        <li><a href="class12.html">Class 12 Biology</a></li>
+        <li><a href="/biowalesir/class9.html">Class 9 Biology</a></li>
+<li><a href="/biowalesir/class10.html">Class 10 Biology</a></li>
+<li><a href="/biowalesir/class11.html">Class 11 Biology</a></li>
+<li><a href="/biowalesir/class12.html">Class 12 Biology</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -65,7 +65,7 @@ const FOOTER_HTML = `
         <li><a href="#">PYQ Papers</a></li>
         <li><a href="#">Diagrams</a></li>
         <li><a href="#">Mind Maps</a></li>
-        <li><a href="teacher.html">For Teachers</a></li>
+        <li><a href="/biowalesir/teacher.html">For Teachers</a></li>
       </ul>
     </div>
     <div class="footer-col">
