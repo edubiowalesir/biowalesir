@@ -5,7 +5,7 @@ const NAV_HTML = `
 <nav class="navbar">
   <a href="index.html" class="nav-logo">
     <span class="leaf">🌿</span>
-    Bio<span>WaleSir</span>
+    BioWaleSir
   </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Home</a></li>
@@ -46,7 +46,7 @@ const FOOTER_HTML = `
 <footer class="footer">
   <div class="footer-grid">
     <div class="footer-brand">
-      <div class="logo">🌿 Bio<span>WaleSir</span></div>
+      <div class="logo">🌿 BioWaleSir</span></div>
       <p>One Stop Solution for Biology — NCERT based content for Class 9–12 students and teachers across India.</p>
     </div>
     <div class="footer-col">
