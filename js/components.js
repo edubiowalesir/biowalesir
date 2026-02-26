@@ -3,7 +3,7 @@
 
 const NAV_HTML = `
 <nav class="navbar">
-  <a href="index.html" class="nav-logo">
+  <a href="/biowalesir/index.html" class="nav-logo">
   <span class="leaf">🌿</span>
   BioWaleSir
 </a>
