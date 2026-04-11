@@ -20,7 +20,7 @@ const NAV_HTML = `
 <a href="/biowalesir/index.html#about">ℹ️ About Us</a>
 <a href="/biowalesir/index.html#contact">📬 Contact</a>
 <a href="/biowalesir/index.html#donate">💛 Donate</a>
-<a> href="https://edubiowalesir.github.io/pathpedia">PathoPedia</a>
+<a> href="https://edubiowalesir.github.io/pathpedia">🦠 PathoPedia</a>
 </div>
     </li>
   </ul>
