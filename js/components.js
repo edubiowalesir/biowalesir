@@ -4,7 +4,7 @@
 const NAV_HTML = `
 <nav class="navbar">
   <a href="/index.html" class="nav-logo">
-  <img src="/logo.png" alt="BioWaleSir Logo" class="nav-logo-img">
+  <img src="/logo.png" alt="BioWaleSir Logo" style="height:38px;width:38px;object-fit:cover;border-radius:6px;vertical-align:middle;display:inline-block;flex-shrink:0;">
   BioWaleSir
 </a>
   <ul class="nav-links" id="navLinks">
@@ -48,7 +48,7 @@ const FOOTER_HTML = `
 <footer class="footer">
   <div class="footer-grid">
     <div class="footer-brand">
-      <div class="logo"><img src="/logo.png" alt="BioWaleSir Logo" class="footer-logo-img"> BioWaleSir</div>
+      <div class="logo"><img src="/logo.png" alt="BioWaleSir Logo" style="height:28px;width:28px;object-fit:cover;border-radius:4px;vertical-align:middle;"> BioWaleSir</div>
       <p>One Stop Solution for Biology — NCERT based content for Class 9–12 students and teachers across India.</p>
     </div>
     <div class="footer-col">
