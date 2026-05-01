@@ -3,23 +3,23 @@
 
 const NAV_HTML = `
 <nav class="navbar">
-  <a href="/index.html" class="nav-logo">
+  <a href="/" class="nav-logo">
   <img src="/logo.png" alt="BioWaleSir Logo" style="height:38px;width:38px;object-fit:cover;border-radius:6px;vertical-align:middle;display:inline-block;flex-shrink:0;">
   BioWaleSir
 </a>
   <ul class="nav-links" id="navLinks">
-    <li><a href="/index.html">Home</a></li>
-<li class="nav-class"><a href="/class9.html">Class 9</a></li>
-<li class="nav-class"><a href="/class10.html">Class 10</a></li>
-<li class="nav-class"><a href="/class11.html">Class 11</a></li>
-<li class="nav-class"><a href="/class12.html">Class 12</a></li>
+    <li><a href="/">Home</a></li>
+<li class="nav-class"><a href="/class9">Class 9</a></li>
+<li class="nav-class"><a href="/class10">Class 10</a></li>
+<li class="nav-class"><a href="/class11">Class 11</a></li>
+<li class="nav-class"><a href="/class12">Class 12</a></li>
     <li class="nav-more">
       <button class="nav-more-btn">More</button>
       <div class="nav-dropdown">
-       <a href="/teacher.html">👩‍🏫 Teacher Section</a>
-<a href="/index.html#about">ℹ️ About Us</a>
-<a href="/index.html#contact">📬 Contact</a>
-<a href="/index.html#donate">💛 Donate</a>
+       <a href="/teacher">👩‍🏫 Teacher Section</a>
+<a href="/#about">ℹ️ About Us</a>
+<a href="/#contact">📬 Contact</a>
+<a href="/#donate">💛 Donate</a>
 <a href="pathopedia.html" target="_blank" rel="noopener noreferrer">🦠 Pathopedia</a>
 </div>
     </li>
@@ -29,17 +29,17 @@ const NAV_HTML = `
   </button>
 </nav>
 <div class="mobile-nav" id="mobileNav">
- <a href="/index.html">🏠 Home</a>
+ <a href="/">🏠 Home</a>
   <div class="mobile-divider"></div>
-  <a href="/class9.html">📗 Class 9</a>
-<a href="/class10.html">📘 Class 10</a>
-<a href="/class11.html">📙 Class 11</a>
-<a href="/class12.html">📕 Class 12</a>
+  <a href="/class9">📗 Class 9</a>
+<a href="/class10">📘 Class 10</a>
+<a href="/class11">📙 Class 11</a>
+<a href="/class12">📕 Class 12</a>
   <div class="mobile-divider"></div>
-  <a href="/teacher.html">👩‍🏫 Teacher Section</a>
-<a href="/index.html#about">ℹ️ About Us</a>
-<a href="/index.html#contact">📬 Contact</a>
-<a href="/index.html#donate">💛 Donate</a>
+  <a href="/teacher">👩‍🏫 Teacher Section</a>
+<a href="/#about">ℹ️ About Us</a>
+<a href="/#contact">📬 Contact</a>
+<a href="/#donate">💛 Donate</a>
 <a href="pathopedia.html" target="_blank" rel="noopener noreferrer">🦠 Pathopedia</a>
 </div>
 `;
@@ -54,10 +54,10 @@ const FOOTER_HTML = `
     <div class="footer-col">
       <h4>Classes</h4>
       <ul>
-        <li><a href="/class9.html">Class 9 Biology</a></li>
-<li><a href="/class10.html">Class 10 Biology</a></li>
-<li><a href="/class11.html">Class 11 Biology</a></li>
-<li><a href="/class12.html">Class 12 Biology</a></li>
+        <li><a href="/class9">Class 9 Biology</a></li>
+<li><a href="/class10">Class 10 Biology</a></li>
+<li><a href="/class11">Class 11 Biology</a></li>
+<li><a href="/class12">Class 12 Biology</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -67,14 +67,14 @@ const FOOTER_HTML = `
         <li><a href="#">PYQ Papers</a></li>
         <li><a href="#">Diagrams</a></li>
         <li><a href="#">Mind Maps</a></li>
-        <li><a href="/teacher.html">For Teachers</a></li>
+        <li><a href="/teacher">For Teachers</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Info</h4>
       <ul>
-        <li><a href="index.html#about">About Us</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="/#about">About Us</a></li>
+        <li><a href="/#contact">Contact</a></li>
         <li><a href="#">Privacy Policy</a></li>
       </ul>
     </div>
