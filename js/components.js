@@ -1,6 +1,18 @@
 // nav-components.js — Shared HTML Components
 // Include this before main.js in every page
 
+// Google tag (gtag.js)
+(function () {
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-7EMFPJ5RKS';
+  document.head.insertBefore(s, document.head.firstChild);
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-7EMFPJ5RKS');
+})();
+
 const NAV_HTML = `
 <nav class="navbar">
   <a href="/" class="nav-logo">
