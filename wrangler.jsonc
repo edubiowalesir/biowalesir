@@ -1,0 +1,19 @@
+{
+  // BioWaleSir.com — Cloudflare Worker (static assets)
+  // Push to GitHub main => Cloudflare Workers Builds auto-deploys.
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "biowalesir",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": true,
+  "assets": {
+    // Site files live in the repo root (no build step). .assetsignore keeps
+    // repo-only files (README, wrangler.jsonc, src/ ...) from being served.
+    "directory": ".",
+    "binding": "ASSETS",
+    // "none" = serve files exactly like GitHub Pages did: /class11.html stays
+    // /class11.html (no redirect). Clean URLs like /class11 are handled in src/index.js.
+    "html_handling": "none",
+    "not_found_handling": "none"
+  }
+}

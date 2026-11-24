@@ -1,0 +1,17 @@
+.git
+.github
+.claude
+.wrangler
+node_modules
+src
+wrangler.jsonc
+.assetsignore
+.gitignore
+.gitattributes
+.DS_Store
+**/.DS_Store
+README.md
+CLAUDE.md
+CNAME
+package.json
+package-lock.json
