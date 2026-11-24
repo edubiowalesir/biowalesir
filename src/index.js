@@ -1,25 +1,10 @@
 // BioWaleSir.com Worker
-// Static files are served directly by Cloudflare. This code only runs when a
-// request does NOT match a file, and copies GitHub Pages behaviour:
-//   /            -> /index.html
-//   /class11     -> /class11.html   (clean URLs used in nav + Google index)
-//   /folder/     -> /folder/index.html
-// Anything else gets a simple 404 page.
+// Static files (and clean URLs like /class11 -> class11.html) are served
+// directly by Cloudflare assets. This code only runs when nothing matched,
+// and returns a friendly 404 page.
 
 export default {
-  async fetch(request, env) {
-    const url = new URL(request.url);
-    const path = url.pathname;
-
-    let candidate = null;
-    if (path.endsWith('/')) candidate = path + 'index.html';
-    else if (!/\.[a-z0-9]+$/i.test(path)) candidate = path + '.html';
-
-    if (candidate) {
-      const res = await env.ASSETS.fetch(new Request(new URL(candidate + url.search, url), request));
-      if (res.ok || res.status === 304) return res;
-    }
-
+  async fetch() {
     return new Response(NOT_FOUND_HTML, {
       status: 404,
       headers: { 'content-type': 'text/html; charset=utf-8' },

@@ -14,8 +14,10 @@
 
 ## Hosting
 - **Cloudflare Worker** `biowalesir` (account: Edu.biowalesir@gmail.com), static assets.
-- Config: `wrangler.jsonc` (assets directory = repo root `.`, `html_handling: "none"`).
-- `src/index.js` sirf tab chalta hai jab koi file match na ho: `/class11` → `class11.html`, `/folder/` → `index.html`, warna 404 page. Isse URLs bilkul GitHub Pages jaise rehte hain (`/class11` aur `/class11.html` dono 200, koi redirect nahi).
+- Config: `wrangler.jsonc` (assets directory = repo root `.`, `html_handling: "auto-trailing-slash"`).
+- **URLs bina `.html` ke** hain: `/class11`, `/chapters/class9/ch2`, `/teacher`, `/pathopedia`. Purane `.html` URL par aaye to Cloudflare Redirect Rule **301** se saaf URL par bhejta hai (`/index.html` → `/`). workers.dev par ye 307 hota hai (assets ka apna redirect).
+- Site ke andar links hamesha **bina `.html`** likho: class page se `location.href='/chapters/class9/ch3'`, chapter page mein `href="ch4"` / `href="/class9"`, home `href="/"`.
+- `src/index.js` sirf tab chalta hai jab koi file match na ho → friendly 404 page.
 - `.assetsignore` — repo-only files (README, CLAUDE.md, wrangler.jsonc, src/, CNAME, .git…) serve nahi hoti. Nayi repo-only file banao to yahan jodo.
 - **Push to `main` = auto-deploy** (Cloudflare Workers Builds, deploy command `npx wrangler deploy`). 1–2 minute.
 - Auto-build na chale: Cloudflare dashboard → Workers & Pages → biowalesir → Deployments → "Retry build".
@@ -23,7 +25,7 @@
 - Test URL: https://biowalesir.edu-biowalesir.workers.dev
 - Domain: `biowalesir.com` GoDaddy se registered, **DNS Cloudflare par** (nameservers marty/paris.ns.cloudflare.com).
   - `www.biowalesir.com` aur `biowalesir.com` = Worker custom domains.
-  - Redirect Rule: `biowalesir.com/*` → `https://www.biowalesir.com/…` (301, query string ke saath). "Always Use HTTPS" ON.
+  - Redirect Rules (zone → Rules → Redirect Rules): `biowalesir.com/*` → `https://www.biowalesir.com/…`; `www…/index.html` → `/`; `www…/*.html` → `www…/${1}` (sab 301, query string ke saath). "Always Use HTTPS" ON.
   - Koi MX/TXT record nahi (email Gmail par hai).
 - **Baaki kaam (27 Nov 2026 ke baad):** GitHub Pages band karna (Settings → Pages → Unpublish), phir repo private karna. Rahul ji ne iski haan de di hai — bas 48 ghante DNS propagation ka intezaar tha. Uske baad `CNAME` file bhi hata sakte hain.
 

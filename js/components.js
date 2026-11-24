@@ -32,7 +32,7 @@ const NAV_HTML = `
 <a href="/#about">ℹ️ About Us</a>
 <a href="/#contact">📬 Contact</a>
 <a href="/#donate">💛 Donate</a>
-<a href="pathopedia.html" target="_blank" rel="noopener noreferrer">🦠 Pathopedia</a>
+<a href="/pathopedia" target="_blank" rel="noopener noreferrer">🦠 Pathopedia</a>
 </div>
     </li>
   </ul>
@@ -52,7 +52,7 @@ const NAV_HTML = `
 <a href="/#about">ℹ️ About Us</a>
 <a href="/#contact">📬 Contact</a>
 <a href="/#donate">💛 Donate</a>
-<a href="pathopedia.html" target="_blank" rel="noopener noreferrer">🦠 Pathopedia</a>
+<a href="/pathopedia" target="_blank" rel="noopener noreferrer">🦠 Pathopedia</a>
 </div>
 `;
 

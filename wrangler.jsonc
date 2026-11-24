@@ -8,12 +8,13 @@
   "workers_dev": true,
   "assets": {
     // Site files live in the repo root (no build step). .assetsignore keeps
-    // repo-only files (README, wrangler.jsonc, src/ ...) from being served.
+    // repo-only files (README, CLAUDE.md, wrangler.jsonc, src/ ...) from being served.
     "directory": ".",
     "binding": "ASSETS",
-    // "none" = serve files exactly like GitHub Pages did: /class11.html stays
-    // /class11.html (no redirect). Clean URLs like /class11 are handled in src/index.js.
-    "html_handling": "none",
+    // Clean URLs: /class11 serves class11.html, /chapters/class9/ch2 serves ch2.html.
+    // Old /xyz.html URLs redirect to /xyz (Cloudflare Redirect Rule makes it a 301
+    // on biowalesir.com; here it is a 307 fallback, e.g. on workers.dev).
+    "html_handling": "auto-trailing-slash",
     "not_found_handling": "none"
   }
 }
