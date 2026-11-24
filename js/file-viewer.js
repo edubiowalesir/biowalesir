@@ -43,11 +43,12 @@
 
   // ---- 2. Build the dialog once ----
   var css = '' +
-    '.fv-overlay{position:fixed;inset:0;z-index:10000;background:rgba(6,20,10,.72);display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;visibility:hidden;transition:opacity .2s ease,visibility .2s}' +
+    '.fv-overlay{position:fixed;inset:0;z-index:10000;background:rgba(6,20,10,.82);display:flex;padding:16px;opacity:0;visibility:hidden;transition:opacity .2s ease,visibility .2s}' +
     '.fv-overlay.open{opacity:1;visibility:visible}' +
-    '.fv-dialog{background:#fff;width:min(1100px,100%);height:min(92vh,100%);border-radius:14px;box-shadow:0 24px 70px rgba(0,0,0,.4);display:flex;flex-direction:column;overflow:hidden;transform:translateY(12px) scale(.985);transition:transform .2s ease}' +
+    // Desktop: fills the whole screen (16px gap), floating title bar + file card
+    '.fv-dialog{width:100%;height:100%;display:flex;flex-direction:column;gap:12px;transform:translateY(12px) scale(.985);transition:transform .2s ease}' +
     '.fv-overlay.open .fv-dialog{transform:none}' +
-    '.fv-head{display:flex;align-items:center;gap:12px;padding:10px 12px 10px 18px;background:var(--green-900,#0a1f0f);color:#fff;flex-shrink:0}' +
+    '.fv-head{display:flex;align-items:center;gap:12px;padding:10px 10px 10px 18px;background:var(--green-900,#0a1f0f);color:#fff;flex-shrink:0;border-radius:16px;border:1px solid rgba(255,255,255,.1);box-shadow:0 8px 30px rgba(0,0,0,.3)}' +
     '.fv-titles{flex:1;min-width:0}' +
     '.fv-title{font-family:"DM Sans",system-ui,sans-serif;font-weight:700;font-size:15.5px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}' +
     '.fv-sub{font-size:12px;color:rgba(255,255,255,.6);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}' +
@@ -57,7 +58,7 @@
     '.fv-close{background:rgba(255,255,255,.12);color:#fff;width:38px;height:38px;padding:0;justify-content:center;font-size:22px;line-height:1}' +
     '.fv-close:hover{background:rgba(255,255,255,.24)}' +
     '.fv-btn:focus-visible{outline:2px solid var(--gold-light,#e8c97a);outline-offset:2px}' +
-    '.fv-body{position:relative;flex:1;background:#f1f3f4}' +
+    '.fv-body{position:relative;flex:1;background:#f1f3f4;border-radius:16px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.4)}' +
     '.fv-frame{position:absolute;inset:0;width:100%;height:100%;border:0;background:#f1f3f4}' +
     '.fv-loading{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:var(--text-mid,#444);font:500 14px "DM Sans",system-ui,sans-serif;background:#f1f3f4;transition:opacity .25s}' +
     '.fv-loading.hide{opacity:0;pointer-events:none}' +
@@ -65,9 +66,11 @@
     '@keyframes fvspin{to{transform:rotate(360deg)}}' +
     'body.fv-lock{overflow:hidden}' +
     '@media (max-width:700px){' +
+      // Phone: edge-to-edge full screen (unchanged look)
       '.fv-overlay{padding:0}' +
-      '.fv-dialog{width:100%;height:100%;border-radius:0}' +
-      '.fv-head{padding:8px 8px 8px 14px;gap:8px}' +
+      '.fv-dialog{gap:0;background:#fff}' +
+      '.fv-head{padding:8px 8px 8px 14px;gap:8px;border-radius:0;border:0;box-shadow:none}' +
+      '.fv-body{border-radius:0;box-shadow:none}' +
       '.fv-open .fv-long{display:none}' +
     '}' +
     '@media (prefers-reduced-motion:reduce){.fv-overlay,.fv-dialog{transition:none}.fv-spin{animation-duration:2s}}';
